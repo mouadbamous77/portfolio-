@@ -46,12 +46,6 @@ const Contact = () => {
     }
   }
 
-  const socialLinks = [
-    { icon: FaLinkedin, url: '#', label: 'LinkedIn' },
-    { icon: FaGithub, url: '#', label: 'GitHub' },
-    { icon: FaBehance, url: '#', label: 'Behance' },
-  ]
-
   return (
     <section id="contact" className="contact section">
       <div className="container">

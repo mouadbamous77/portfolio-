@@ -5,7 +5,6 @@ import './About.css'
 
 const About = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
 
 
   const containerVariants = {
@@ -59,7 +58,7 @@ const About = () => {
             >
               <img
                 src="/images/profile/profile-photo.jpg"
-                alt="Photo professionnelle"
+                alt="Mouad Bamous"
                 className="profile-image"
                 onError={(e) => {
                   // Fallback vers placeholder si l'image n'existe pas
