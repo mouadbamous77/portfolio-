@@ -1,0 +1,51 @@
+.techstack {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.tech-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(251, 191, 36, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+/* Redefining common section styles here for isolation 
+   matching the design in About.css */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--color-gold);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-top: 1.5rem;
+}
